@@ -23,3 +23,18 @@ wget https://bouncer.gentoo.org/fetch/root/all/releases/arm/autobuilds/20220222T
 wget https://mirror.leaseweb.com/gentoo/snapshots/portage-latest.tar.bz2
 
 ```
+# Preparing the SD card
+as decribed here [gentooo wiki](https://wiki.gentoo.org/wiki/Raspberry_Pi_3_64_bit_Install)
+
+# Cross compiling
+
+Creade a folder for the cross compiled modules (inside the folder rpi_64)
+```
+mkdir cross_modules
+cd linux
+ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make bcm2711_defconfig
+ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make menuconfig
+
+```
+
+
