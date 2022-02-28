@@ -15,7 +15,7 @@ wget https://bouncer.gentoo.org/fetch/root/all/releases/arm/autobuilds/20220222T
 wget https://mirror.leaseweb.com/gentoo/snapshots/portage-latest.tar.bz2
 ```
 # Preparing the SD card
-as decribed here [here](https://wiki.gentoo.org/wiki/Raspberry_Pi_3_64_bit_Install) and [here](https://wiki.gentoo.org/wiki/Raspberry_Pi/Quick_Install_Guide) (gentoo wiki).
+as decribed [here](https://wiki.gentoo.org/wiki/Raspberry_Pi_3_64_bit_Install) and [here](https://wiki.gentoo.org/wiki/Raspberry_Pi/Quick_Install_Guide) (gentoo wiki).
 
 # Installation
 ## Mounting the partitions
