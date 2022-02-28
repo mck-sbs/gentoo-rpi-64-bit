@@ -50,6 +50,11 @@ sudo cp -v linux/arch/arm64/boot/Image /mnt/gentoo/boot/kernel8.img
 
 get some config files:
 ```
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/fstab
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/inittab
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/config.txt
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/cmdline.txt
+
 sudo mv /mnt/gentoo/etc/fstab /mnt/gentoo/etc/fstab_bak
 sudo mv fstab /mnt/gentoo/etc/
 
