@@ -46,7 +46,39 @@ sudo cp -vr linux/arch/arm64/boot/dts/overlays/*.dtbo /mnt/gentoo/boot/overlays
 sudo cp -v linux/arch/arm64/boot/dts/broadcom/bcm2711-rpi-4-b.dtb /mnt/gentoo/boot/
 sudo cp -v linux/arch/arm64/boot/Image /mnt/gentoo/boot/kernel8.img
 ```
+# Configurtion
 
+## ToDo fstab
+## ToDo cmdline.txt
+## ToDo config.txt
+## ToDo inittab 
+
+List the timezones:
+```
+ls /mnt/gentoo/usr/share/zoneinfo
+```
+
+and choose one:
+```
+sudo cp /mnt/gentoo/usr/share/zoneinfo/Europe/Berlin /mnt/gentoo/etc/localtime
+sudo echo "Europe/Berlin" > /mnt/gentoo/etc/timezone
+```
+
+clrear root password
+```
+sudo sed -i 's/^root:.*/root::::::::/' /mnt/gentoo/etc/shadow
+```
+
+set keymap
+```
+sudo sed -i 's/^keymap="us"/keymap="de"/' /mnt/gentoo/etc/conf.d/keymaps
+```
+
+# Unmount SD
+```
+sudo umount /mnt/gentoo/boot
+sudo umount /mnt/gentoo
+```
 
 # References
 https://wiki.gentoo.org/wiki/Raspberry_Pi_3_64_bit_Install
