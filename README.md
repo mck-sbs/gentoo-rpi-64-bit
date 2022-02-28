@@ -37,7 +37,7 @@ sudo mount /dev/mmcblk0p1 /mnt/gentoo/boot
 ```
 sudo tar xpfv stage3-armv7a-openrc-20220222T223655Z.tar.xz --xattrs-include='*.*' --numeric-owner -C /mnt/gentoo/
 
-!!!Attention!!! /mnt/gentoo/usr seems to be wrong. I will try /mnt/gentoo/var/db/repos/gentoo
+!!!Attention!!! /mnt/gentoo/usr seems to be wrong. I will try /mnt/gentoo/var/db/repos/gentoo with tar xvpf portage-latest.tar.bz2 --strip-components=1 -C /mnt/gentoo/var/db/repos/gentoo, maybe sudo mkdir /mnt/gentoo/var/db/repos/gentoo first
 sudo tar xvpf portage-latest.tar.bz2 --strip-components=1 -C /mnt/gentoo/usr
 ```
 ## Compiling and installing kernel, modules and device tree
