@@ -119,6 +119,8 @@ https://deardevices.com/2019/04/18/how-to-crosscompile-raspi/
 
 https://raspberrypi.stackexchange.com/questions/311/how-do-i-backup-my-raspberry-pi
 
+https://wiki.gentoo.org/wiki/Raspberry_Pi/Kernel_Compilation
+
 
 
 
