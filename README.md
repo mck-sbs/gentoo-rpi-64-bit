@@ -107,7 +107,7 @@ sudo dd if=/dev/mmcblk0 of=image.img
 ```
 
 # Boot
-Now you're ready for the first boot [wiki](https://github.com/mck-sbs/gentoo-rpi-64-bit/wiki) 
+Now you're ready for the first boot, [wiki](https://github.com/mck-sbs/gentoo-rpi-64-bit/wiki).
 
 
 # References
