@@ -48,10 +48,20 @@ sudo cp -v linux/arch/arm64/boot/Image /mnt/gentoo/boot/kernel8.img
 ```
 # Configurtion
 
-## ToDo fstab
-## ToDo cmdline.txt
-## ToDo config.txt
-## ToDo inittab 
+get some config files:
+```
+sudo mv /mnt/gentoo/etc/fstab /mnt/gentoo/etc/fstab_bak
+sudo mv fstab /mnt/gentoo/etc/
+
+sudo mv /mnt/gentoo/etc/inittab /mnt/gentoo/etc/inittab_bak
+sudo mv inittab /mnt/gentoo/etc/
+
+sudo mv /mnt/gentoo/boot/config.txt /mnt/gentoo/boot/config_txt_bak
+sudo mv config.txt /mnt/gentoo/boot/
+
+sudo mv cmdline.txt /mnt/gentoo/boot/
+```
+
 
 List the timezones:
 ```
