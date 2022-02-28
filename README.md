@@ -46,7 +46,7 @@ sudo cp -vr linux/arch/arm64/boot/dts/overlays/*.dtbo /mnt/gentoo/boot/overlays
 sudo cp -v linux/arch/arm64/boot/dts/broadcom/bcm2711-rpi-4-b.dtb /mnt/gentoo/boot/
 sudo cp -v linux/arch/arm64/boot/Image /mnt/gentoo/boot/kernel8.img
 ```
-# Configurtion
+# Configuration
 
 get some config files:
 ```
