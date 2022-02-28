@@ -1,5 +1,12 @@
-# gentoo-rpi-64-bit
-Building a gentoo 64-bit system for Raspberry Pi 4. I'm using a laptop with Ubuntu 20.04 as host machine. You need following packages installed:
+# Why gentoo (in my opinian)?
+Gentoo is a great distro, if you want to have full accsess to all configuration capabilities. It has a very good package management system. It is also the perfect distro to learn linux. A major disadvantage of gentoo is the time it takes to compile packages. Imagine you visit a customer and need another browser on your laptop. You dont't want to compile this package for half an hour. It is possible to install precompiled packages, but there are other distros which have better packages management systems for precompiled packages. An update of your system can also take several hours. The installation process on your PC / laptop is also very time consuming. But there are many people with gentoo installed on their productive systems and are happy with that. Once installed / configured, it is a very stable distro.
+
+Raspberry Pi 4 with gentoo is the perfect compination to learn HW and SW. If your installaion is broken, copy it to your SD card again. You can also easily switch to other distros by replacing the sd card.
+
+I have a laptop with Ubuntu LTS to get my work done, which I also use to cross-compile the SW for the targe (rpi).
+
+# Host machine
+Building a gentoo 64-bit system for Raspberry Pi 4. I'm using a laptop with Ubuntu 20.04 as a host machine. You need following packages installed:
 ```
 sudo apt-get install build-essential gawk gcc g++ gfortran git texinfo bison libncurses-dev flex libssl-dev gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 ```
@@ -94,6 +101,10 @@ sudo sed -i 's/^keymap="us"/keymap="de"/' /mnt/gentoo/etc/conf.d/keymaps
 sudo umount /mnt/gentoo/boot
 sudo umount /mnt/gentoo
 ```
+Before you put in your SD card and boot the rpi, you sopuld back up your sd card:
+```
+sudo dd if=/dev/mmcblk0 of=image.img
+```
 
 # References
 https://wiki.gentoo.org/wiki/Raspberry_Pi_3_64_bit_Install
@@ -105,6 +116,9 @@ https://github.com/sakaki-/gentoo-on-rpi-64bit
 https://wiki.gentoo.org/wiki/Raspberry_Pi/Quick_Install_Guide
 
 https://deardevices.com/2019/04/18/how-to-crosscompile-raspi/
+
+https://raspberrypi.stackexchange.com/questions/311/how-do-i-backup-my-raspberry-pi
+
 
 
 
