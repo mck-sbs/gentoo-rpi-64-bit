@@ -37,8 +37,8 @@ sudo mount /dev/mmcblk0p1 /mnt/gentoo/boot
 ```
 sudo tar xpfv stage3-armv7a-openrc-20220222T223655Z.tar.xz --xattrs-include='*.*' --numeric-owner -C /mnt/gentoo/
 
-!!!Attention!!! /mnt/gentoo/usr seems to be wrong. I will try /mnt/gentoo/var/db/repos/gentoo with tar xvpf portage-latest.tar.bz2 --strip-components=1 -C /mnt/gentoo/var/db/repos/gentoo, maybe sudo mkdir /mnt/gentoo/var/db/repos/gentoo first
-sudo tar xvpf portage-latest.tar.bz2 --strip-components=1 -C /mnt/gentoo/usr
+sudo mkdir /mnt/gentoo/var/db/repos/gentoo
+sudo tar xvpf portage-latest.tar.bz2 --strip-components=1 -C /mnt/gentoo/var/db/repos/gentoo
 ```
 ## Compiling and installing kernel, modules and device tree
 ```
@@ -59,10 +59,10 @@ sudo cp -v linux/arch/arm64/boot/Image /mnt/gentoo/boot/kernel8.img
 
 get some config files:
 ```
-wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/fstab
-wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/inittab
-wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/config.txt
-wget https://github.com/mck-sbs/gentoo-rpi-64-bit/blob/main/cmdline.txt
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/raw/main/fstab
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/raw/main/inittab
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/raw/main/config.txt
+wget https://github.com/mck-sbs/gentoo-rpi-64-bit/raw/main/cmdline.txt
 
 sudo mv /mnt/gentoo/etc/fstab /mnt/gentoo/etc/fstab_bak
 sudo mv fstab /mnt/gentoo/etc/
