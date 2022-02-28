@@ -64,12 +64,12 @@ sudo cp /mnt/gentoo/usr/share/zoneinfo/Europe/Berlin /mnt/gentoo/etc/localtime
 sudo echo "Europe/Berlin" > /mnt/gentoo/etc/timezone
 ```
 
-clrear root password
+clrear root password:
 ```
 sudo sed -i 's/^root:.*/root::::::::/' /mnt/gentoo/etc/shadow
 ```
 
-set keymap
+set keymap:
 ```
 sudo sed -i 's/^keymap="us"/keymap="de"/' /mnt/gentoo/etc/conf.d/keymaps
 ```
