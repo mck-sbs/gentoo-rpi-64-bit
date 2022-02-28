@@ -101,7 +101,7 @@ sudo sed -i 's/^keymap="us"/keymap="de"/' /mnt/gentoo/etc/conf.d/keymaps
 sudo umount /mnt/gentoo/boot
 sudo umount /mnt/gentoo
 ```
-Before you put in your SD card and boot the rpi, you sopuld back up your sd card:
+Before you put in your SD card and boot the rpi, you should back up your sd card:
 ```
 sudo dd if=/dev/mmcblk0 of=image.img
 ```
