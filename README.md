@@ -40,7 +40,7 @@ sudo tar xpfv stage3-armv7a-openrc-20220222T223655Z.tar.xz --xattrs-include='*.*
 sudo mkdir /mnt/gentoo/var/db/repos/gentoo
 sudo tar xvpf portage-latest.tar.bz2 --strip-components=1 -C /mnt/gentoo/var/db/repos/gentoo
 ```
-## Compiling and installing kernel, modules and device tree
+## Cross compiling and installing kernel, modules and device tree
 ```
 cd linux
 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make distclean
