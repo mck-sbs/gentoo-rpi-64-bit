@@ -3,7 +3,7 @@ Gentoo is a great distro, if you want to have full accsess to all configuration 
 
 Raspberry Pi 4 with gentoo is the perfect combination to learn HW and SW. If your installaion is broken, copy it to your SD card again. You can easily switch to other distros by replacing the sd card.
 
-I have a laptop with Ubuntu LTS to get my work done, which I also use to cross-compile the SW for the target (rpi).
+I've got a laptop with Ubuntu LTS to get my work done, which I also use to cross-compile the SW for the target (rpi).
 
 # Host machine
 Building a gentoo 64-bit system for Raspberry Pi 4. I'm using a laptop with Ubuntu 20.04 as a host machine. You need following packages installed:
