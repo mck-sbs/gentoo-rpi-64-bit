@@ -108,6 +108,11 @@ sudo umount /mnt/gentoo
 Before you put in your SD card and boot the rpi, you should back up your sd card:
 ```
 sudo dd if=/dev/mmcblk0 of=image.img
+
+ToDo shrink 
+
+https://medium.com/platformer-blog/creating-a-custom-raspbian-os-image-for-production-3fcb43ff3630
+
 ```
 
 # Boot
