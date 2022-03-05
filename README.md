@@ -116,7 +116,7 @@ https://medium.com/platformer-blog/creating-a-custom-raspbian-os-image-for-produ
 ```
 
 # Boot
-Now you're ready for the first boot, see [wiki](https://github.com/mck-sbs/gentoo-rpi-64-bit/wiki/First-boot).
+Now you're ready for the first boot, see [wiki](https://github.com/mck-sbs/gentoo-rpi-64-bit/wiki).
 
 
 # References
