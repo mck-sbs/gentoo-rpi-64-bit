@@ -18,7 +18,8 @@ mkdir rpi-64
 cd rpi-64
 git clone --depth=1 https://github.com/raspberrypi/firmware -b stable 
 git clone --depth=1 https://github.com/raspberrypi/linux -b rpi-5.15.y
-wget https://bouncer.gentoo.org/fetch/root/all/releases/arm/autobuilds/20220222T223655Z/stage3-armv7a-openrc-20220222T223655Z.tar.xz
+wget http://distfiles.gentoo.org/releases/arm64/autobuilds/current-stage3-arm64-desktop-openrc/stage3-arm64-desktop-openrc-20220227T233703Z.tar.xz
+#wget https://bouncer.gentoo.org/fetch/root/all/releases/arm/autobuilds/20220222T223655Z/stage3-armv7a-openrc-20220222T223655Z.tar.xz
 wget https://mirror.leaseweb.com/gentoo/snapshots/portage-latest.tar.bz2
 ```
 # Preparing the SD card
