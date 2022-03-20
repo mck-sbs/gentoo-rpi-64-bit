@@ -1,0 +1,15 @@
+# have a properly sized image
+disable_overscan=1
+# for sound over HDMI
+hdmi_drive=2
+# Enable audio (loads snd_bcm2835)
+dtparam=audio=on
+over_voltage=6
+arm_freq=2147
+gpu_freq=750
+force_turbo=1
+gpu_mem=256
+arm_64bit=1
+kernel=kernel8.img
+dtoverlay=vc4-kms-v3d
+

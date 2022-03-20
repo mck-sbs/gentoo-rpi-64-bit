@@ -1,0 +1,6 @@
+if $if_ip; then
+	chronyc online
+elif $if_down; then
+	chronyc offline
+fi
+
